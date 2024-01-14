@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link rel="stylesheet" href="styles.css"> 
+    </head>
+    <body>
+      <h1 id="title">Survey</h1>
+      <p id="description">This survey is for the Responsive Web Design training, please fill it up...</p>
+      <form id="survey-form">
+        <fieldset>
+          <legend>First Data</legend>
+          <label id="name-label" for="name">Enter your Name: <input type="text" id="name" placeholder="Full name..." required/> </label>
+          <label id="email-label" for="email">Enter your Email: <input type="email" id="email" placeholder="The Email..." required/> </label>
+          <label id="number-label"for="number">Enter your Lucky Integer Number: <input type="number" id="number" min="0" max="99999999999" placeholder="From 0 to 99999999999" required/> </label>
+        </fieldset>
+        <fieldset>
+          <legend>Extra Data</legend>
+          <label id="dropdown-label" for="dropdown">Have you done this before? 
+            <select id="dropdown">
+              <option value="Y">Yes</option>
+              <option value="N">No</option>
+            </select>
+          </label>
+            <div class="abajo">
+              <h3>Is the above for real?</h3>
+              <input type="radio" name="dropdown-select" value="true"/> <label> True</label>
+              <input type="radio" name="dropdown-select" value="false"/> <label> False</label>
+            </div>
+            <p>Which of these options best decribe your sleep?
+              <div class="abajo">
+                <input type="checkbox" name="check-select" value="Well" checked/> <label> Slept well, feeling rested</label>
+                <input type="checkbox" name="check-select" value="Nightmare"/> <label> Nightmare last night</label>
+                <input type="checkbox" name="check-select" value="Interruption"/> <label> Woke up in the middle of the night</label>
+                <input type="checkbox" name="check-select" value="Nothing"/> <label> What's sleep?</label>
+              </div>
+            </p>
+            <div class="abajo">
+              <label for="comments">Additional Comments:</label>
+              <textarea id="comments" placeholder="Enter any additional comment... (Required)" required></textarea>
+            </div>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit"/>
+      </form>
+    </body>
+  </html>
